@@ -1,0 +1,31 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+          xmlns="sap.m" 
+          xmlns:form="sap.ui.layout.form"
+          controllerName="tom.controller.View2">
+          <Page title="Welcome to my View 2 page 😊">
+          <form:SimpleForm editable="true">
+            <!-- this is the aggrigation of the simple form class -->
+            <form:content >
+            <Label text="Emp Id"></Label>
+            <Input id="idEmpId" width="30%" value="{/empStr/empId}"></Input>
+            <Label text="Emp Name"></Label>
+            <Input id="idEmpName" width="50%" value="{path:'/empStr/empName'}"></Input>
+            <Label text="Salary"></Label>
+            <Input id="idEmpSal" width="30%" enabled="{=${/empStr/empName} ==='Shiva'? false:true}"></Input> <!--Used expression binding for grade out this field  -->
+            <Label text="Currency"></Label>
+            <Input id="idEmpCurr" width="20%" value="{/empStr/currency}"></Input>
+            <Label text="Smoker"></Label>
+            <Switch id="idEmpSmk" ></Switch>
+            </form:content>
+          </form:SimpleForm>
+          <footer>
+            <Toolbar >
+                <Button text="DoubleTap" press="onChange"></Button>
+            </Toolbar>
+          </footer>
+        </Page>
+          <!-- <Input id="idField"></Input>
+          <Button text="ClickMe" press="newFunction"></Button> -->
+
+    
+</mvc:View>

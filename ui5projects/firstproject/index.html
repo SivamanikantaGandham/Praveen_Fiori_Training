@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Title of my page
+    </title>
+    <meta charset="utf-8">
+    <meta name="Author" content="siva">
+    <meta name="keyword" content="Fiori HTML practise">
+    <meta name="description" content="Learn SAPUI5 ,Fiori easily">
+    <link rel="stylesheet" href="style.css"> <!--For linking external css file in the html  -->
+    <style> 
+        /* This is for Internal CSS This is used to style using the class */
+        .Head2 {
+            background-color: blueviolet;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: italic;
+        }
+
+        /* This is used to style using the ID */
+        #Head3 {
+            background-color: aqua;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+        }
+        /* This is used as internal styling using the tag*/
+        h4 {
+            background-color: black;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: medium;
+            font-variant: small-caps;
+            color: azure;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        td,th{
+            border: 1px solid black;
+        }
+        th{
+            background-color: rgb(249, 139, 5);
+            color: antiquewhite;
+            font-family: cursive;
+            font-weight: bolder;
+        }
+        td{
+            padding: 3px;
+            text-decoration: wavy;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        tr:nth-child(odd){
+            background-color: blue;
+        }
+        tr:nth-child(even){
+            background-color: green;
+        }
+        #id name:focus{
+            background-color: black;
+            color: cornsilk;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+ <!-- For External css to link we used
+    <link rel="stylesheet" href="css/mystyle.css"> -->
+    <script src="first.js"></script> <!--For linking the external js file  -->
+    <script>
+        function internal() {
+            alert("This is for internal scripting");
+            console.log("Welcome to internal JS ");
+        }
+        // function next() {
+        //     // Simulate a mouse click:
+        //     window.localStorage=".second.html"
+           
+            
+
+        // }
+    </script>
+</head>
+
+<body>
+    <label
+        style="color: Red; font-style: oblique; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-variant: small-caps;">
+        Inline styles </label>
+    <h1>Hello Welcome to my world how are you all?? 😊😊😊😊😊😊😊</h1>
+    <h2 class="Head2">This is for class</h2>
+    <h3 id="Head3">This is for ID</h3>
+    <h4>This is for Tag selector</h4>
+    <p>Here we are using <i>italic</i> <b>bold</b> <em>emphasis</em> paragraph tag</p>
+    <a href="https://www.bbc.com/news/world">Click Me</a>
+    <br>
+    <a href="https://www.bbc.com/news/world/europe/jersey">
+        <img src="img/Screenshot 2023-07-23 171634.png" width="250px" height="250px"></a>
+    <form action="https://www.anubhavtrainings.com/" method="get">
+        <div class="credientials">
+            <label>Username</label>
+            <input id="name>
+        </div>
+        <div class="credientials">
+            <label>Password</label>
+            <input type="password">
+        </div>
+        <label>Email</label>
+        <input type="email"><br>
+        <label>Number</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]"><br>
+        <label>Date</label>
+        <input type="date"><br>
+        <input type="submit">
+        <input type="textfield">Names
+        <input type="textarea">address
+    </form>
+    <button onclick="message()">JS Button</button>
+    <button onclick="internal()">JS internal</button><br>
+    <audio src="https://www.jiosaavn.com/featured/virupaksha/T-GP90Gl7yJTHgJw1pi47A__" controls></audio><br>
+    <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video><br>
+    <table>
+        <thead>
+            <th>Song name</th>
+            <th>Author</th>
+            <th>Rating</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Iddaru ammailatho</td>
+                <td>Srinu</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Iddaru ammailatho</td>
+                <td>zeal</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Iddaru ammailatho</td>
+                <td>Rahul</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+        <span>
+            <label>This</label>
+            <label> will</label>
+            <label>come in </label>
+            <label>stright line</label>
+        </span>
+    </table>
+    <iframe src="https://www.anubhavtrainings.com/" width="100%" height="100%" frameborder="0"></iframe>
+    <iframe width="737" height="389" src="https://www.youtube.com/embed/W3EC1fx1Yqg"
+        title="Bholaa Shankar Trailer | MegaStar Chiranjeevi,Keerthy Suresh Tamannaah | Meher Ramesh | Anil Sunkara"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    <button onclick="next()">Next page</button>
+</body>
+
+</html>

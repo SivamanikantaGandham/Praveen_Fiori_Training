@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Exercise</title>
+    <script>
+      function addData() {
+        // var table = document.getElementById('tbl');
+        // var rowCount = table.rows.length;
+        // var cellCount = table.rows[0].cells.length;
+        var name = document.getElementById("sName").value;
+        var marks = document.getElementById("mks").value;
+        var table=document.getElementById("tbl");
+        var newRow=table.insertRow(table.rows.length);
+
+        var cell1=newRow.insertCell(0);
+        var cell2=newRow.insertCell(1);
+        cell1.innerHTML=name;
+        cell2.innerHTML=marks; 
+
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <label for="sName">Student Name</label>
+      <input id="sName" />
+      <label for="mks">Marks</label>
+      <input id="mks" />
+      <button onclick="addData()">Submit</button>
+    </div>
+    <table border="1px" id="tbl">
+      <tr>
+        <th>Student Name</th>
+        <th>Marks</th>
+      </tr>
+      
+    </table>
+  </body>
+</html>

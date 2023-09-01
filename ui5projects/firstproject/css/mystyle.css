@@ -1,0 +1,110 @@
+
+        /* This is used to style using the class */
+        .Head2 {
+            background-color: blueviolet;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: italic;
+        }
+
+        /* This is used to style using the ID */
+        #Head3 {
+            background-color: aqua;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+        }
+        /* This is used as internal styling using the tag*/
+        h4 {
+            background-color: black;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: medium;
+            font-variant: small-caps;
+            color: azure;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        td,th{
+            border: 1px solid black;
+        }
+        th{
+            background-color: rgb(249, 139, 5);
+            color: antiquewhite;
+            font-family: cursive;
+            font-weight: bolder;
+        }
+        td{
+            padding: 3px;
+            text-decoration: wavy;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        tr:nth-child(odd){
+            background-color: blue;
+        }
+        tr:nth-child(even){
+            background-color: green;
+        }
+        #id name:focus{
+            background-color: black;
+            color: cornsilk;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .Table{
+
+            border: 1px solid black;
+            width: 210px;
+            margin: 7px;
+            float: left;
+          }
+          .Header {
+            font: 100;
+            background-color: yellow;
+            width: 210px;
+            border: 1px solid blue;
+          }
+          .para {
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+              sans-serif;
+            width: 200px;
+            background-color: burlywood;
+            border: 1px solid violet;
+            padding: 5px; 
+          }
+          img{
+            width:150px;
+            height:150px;
+            opacity: 0,4;
+          }
+          .myImage{
+            float:left;
+            margin: 5px;
+          }
+          img:hover{
+            opacity: 1;
+            border: 3px solid red;
+          }
+          li{
+            float:left;
+            padding: 10px;
+            border:1px solid black;
+            background-color: cadetblue;
+          }
+          ul{
+            list-style: none;
+          }
+          a{
+            text-decoration: none;
+            text-transform: capitalize;
+            color: aliceblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+          }
+          li:hover{
+            background-color: aqua;
+          }
+
+
+    

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title></title>
+        <style></style>
+        <script>
+            function usrLogin()
+            {
+               var oUsr=document.getElementById("usr").value;
+                
+               var oPsw=document.getElementById("psw").value;
+                if(oUsr === oPsw)
+                {
+                    alert("Login sucess");
+                }else{
+                    alert("Login failed");
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+        <div>
+            <label>Username</label>
+            <input type="text" id="usr">
+            <label>password</label>
+            <input type="password" id="psw">
+            <button onclick="usrLogin()">Login</button>
+        </div>
+    </body>
+</html>
