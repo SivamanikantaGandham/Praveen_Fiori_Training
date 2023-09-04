@@ -1,0 +1,31 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+          xmlns="sap.m" 
+          xmlns:form="sap.ui.layout.form"
+          controllerName="tom.controller.Main">
+          <Page title="Welcome to my page 😊">
+          <form:SimpleForm >
+            <!-- this is the aggrigation of the simple form class -->
+            <form:content >
+            <Label text="Emp Id"></Label>
+            <Input id="idEmpId" width="30%"></Input>
+            <Label text="Emp Name"></Label>
+            <Input id="idEmpName" width="50%"></Input>
+            <Label text="Salary"></Label>
+            <Input id="idEmpSal" width="30%"></Input>
+            <Label text="Currency"></Label>
+            <Input id="idEmpCurr" width="20%"></Input>
+            <Label text="Smoker"></Label>
+            <Switch id="idEmpSmk"></Switch>
+            </form:content>
+          </form:SimpleForm>
+          <footer>
+            <Toolbar >
+                <Button text="pressMe"></Button>
+            </Toolbar>
+          </footer>
+        </Page>
+          <!-- <Input id="idField"></Input>
+          <Button text="ClickMe" press="newFunction"></Button> -->
+
+    
+</mvc:View>
